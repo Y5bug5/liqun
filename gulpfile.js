@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const babel = require('gulp-babel');
+// const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
@@ -9,8 +9,8 @@ const concat = require('gulp-imagemin');
 
 gulp.task('sass', () => {
     gulp.src('./src/sass/*.scss')
-        .pipe(sass())
-        .pipe(cssnano())
+        .pipe(sass({outputStyle:'expanded'}))
+        //.pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./dist/css'));
 })
