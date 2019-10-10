@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/header_tail.min.css">
+    <link rel="stylesheet" href="css/main2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/particulars.min.css">
+    <title>详情页</title>
+</head>
+<body>
+    <div id="head"></div>
+    <div id="main">
+        <div id="nav"></div>
+        <hr>
+        <p id="bor"></p>
+        <div id="banner" class="fl">
+            
+        </div>
+        <div id="price" class="fr">
+           <div> <h4>五花肉片（精品）</h4></div>
+            <p id="rate">价格：<span>登录查看价格 </span>/斤</p>
+            <p>供应商  由 <a href="javascript:;">生鲜物流</a> 发货并提供售后服务 </p>
+            <p id="pack">包装含量 <span>4斤/件 </span></p>
+            <p id="serve">服务 <strong class="img_01"></strong> 支持7天无理由退货，<span> 定制商品除外，鲜活易腐、酒水等商品仅支持当面退货，</span><a href="javascript:;"> 查看详情> </a></p>
+               <p>   <strong class="img_02"></strong> 利群放心价，价高返差价<a href="javascript:;"> 查看详情> </a></p> 
+        </div>
+        <div id="coding">
+            <li class="fl commodity">
+                <p>商品编码：PR170504000070</p>
+                <p><i></i>收藏商品</p>
+            </li>
+            <li class="fl subscription">
+                <p>最小起订量1  件 </p>
+                <p><span id="subtract">-</span><input type="text" placeholder="4" id="textbox"><span id="plus">+</span><a href="cart.html"> <input type="button" value="加入购物车" id="btn"></a></p>
+            </li>
+        </div>
+        <div class="fl" id="guess">
+            <span>猜你喜欢</span>
+            <li>
+                <img src="img/guess_01.jpg" alt="图">
+               <p>包盒精肉片</p> 
+               <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_02.jpg" alt="">
+                <p>精选前肘 去膘</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_03.jpg" alt="">
+                <p>脂渣</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_04.jpg" alt="">
+                <p>寸骨</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_05.jpg" alt="">
+                <p>调理猪肉串(铁签)</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_06.jpg" alt="">
+                <p>带皮五花肉</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_07.jpg" alt="">
+                <p>不带肉前腿骨</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_08.jpg" alt="">
+                <p>肘子规格1.8-2.2斤每个</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_09.jpg" alt="">
+                <p>德国咸猪手</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+            <li>
+                <img src="img/guess_10.jpg" alt="">
+                <p>金牌烤肘子</p> 
+                <p><i>登录查看价格</i></p>
+            </li>
+    
+        </div>
+        <div class="fr" id="introduce">
+           <p id="flo"> <span class="fl">商品介绍</span><i class="fl"> 商品评价(0)</i> <span style="opacity: 0;">加入购物车</span></p>
+            <p>精选上等五花肉精切而成。适合烧烤食用。</p>
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <p id="talk"><span>商品评价(0)</span></p>
+            <p id="reputation">好评率<span>100%</span> <i>全部评价</i><i> 好评(0) </i><i>中评(0)</i><i>差评(0) </i></p>
+        </div>
+        <div id="return">
+            <span>
+               <a href="#">
+                    <p>top</p>
+                    <p>^</p>
+               </a>
+            </span>
+        </div>
+    </div>
+    <div id="over"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $("#head").load('head_and_tail.html #header');
+        $("#over").load('head_and_tail.html #foot');
+        $("#nav").load('navigation2.html');
+        $('#banner').load('baner.html');
+
+    </script>
+</body>
+</html>

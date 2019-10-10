@@ -1,0 +1,421 @@
+@charset "UTF-8";
+/*公共样式*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+i, em {
+  font-style: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+#main {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#main #nav {
+  border-bottom: 2px solid #3466ad;
+  width: 100%;
+  height: 44px;
+  overflow: visible;
+}
+
+#main #nav #nav_tion2 {
+  width: 200px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+#main #nav span {
+  float: left;
+  padding-left: 30px;
+  margin-top: 12px;
+  font-size: 16px;
+  color: #666;
+  line-height: 30px;
+}
+
+#main #nav #cvs, #main #nav #fresh {
+  margin-top: 12px;
+  width: 100px;
+}
+
+#main #nav #cvs select, #main #nav #fresh select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding: 0 15px;
+  color: #666666;
+}
+
+#main #nav #fresh {
+  width: 90px;
+}
+
+#main #classify {
+  width: 100%;
+  height: 126px;
+}
+
+#main #classify #point, #main #classify #brand {
+  overflow: hidden;
+}
+
+#main #classify #point span, #main #classify #brand span {
+  display: inline-block;
+  font-weight: 900;
+  width: 100px;
+  height: 42px;
+  font-size: 14px;
+  line-height: 42px;
+  color: #666;
+}
+
+#main #classify #point ul, #main #classify #brand ul {
+  width: 800px;
+}
+
+#main #classify #point ul li, #main #classify #brand ul li {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  line-height: 42px;
+  margin-right: 29px;
+  overflow: hidden;
+}
+
+#main #classify #point .hei, #main #classify #brand .hei {
+  height: 42px;
+}
+
+#main #classify #point .very, #main #classify #brand .very {
+  width: 55px;
+  color: #666;
+  line-height: 42px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#main #classify #point .very i, #main #classify #brand .very i {
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  margin-left: 5px;
+  margin-top: 18px;
+  background: url(../../dist/img/goodslist-icon.png) no-repeat -203px -34px;
+}
+
+#main #classify #point .very:active i, #main #classify #brand .very:active i {
+  background: url(../../dist/img/goodslist-icon.png) no-repeat -136px -34px;
+}
+
+#main #classify #brand {
+  overflow: hidden;
+}
+
+#main #classify #seek {
+  overflow: hidden;
+  width: 100%;
+  height: 42px;
+}
+
+#main #classify #seek p {
+  margin-top: 5px;
+}
+
+#main #classify #seek p input {
+  width: 235px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 0px 12px;
+}
+
+#main #classify #seek p span {
+  float: right;
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+}
+
+#main #classify #seek p span i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px 20px;
+  background: url(../../dist/img/goodslist-icon.png) no-repeat -469px -27px;
+  cursor: pointer;
+}
+
+#main #sales {
+  overflow: hidden;
+}
+
+#main #sales #sales_fl {
+  width: 960px;
+}
+
+#main #sales #sales_fl #guide {
+  width: 100%;
+  height: 50px;
+  background-color: #ececec;
+  margin: 50px auto 20px;
+  display: block;
+  overflow: hidden;
+}
+
+#main #sales #sales_fl #guide ul li {
+  float: left;
+  display: inline-block;
+  width: 88px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  color: #000;
+  border-left: 1px solid #cccccc;
+}
+
+#main #sales #sales_fl #guide ul li a {
+  text-decoration: none;
+}
+
+#main #sales #sales_fl #guide ul .gui_first {
+  background-color: #f00;
+}
+
+#main #sales #sales_fl #guide ul .gui_first a {
+  color: #fff;
+}
+
+#main #sales #sales_fl #guide .ul_right {
+  width: 240px;
+  height: 48px;
+}
+
+#main #sales #sales_fl #guide .ul_right li {
+  width: 119px;
+  border: none;
+}
+
+#main #sales #sales_fl #guide .ul_right li i, #main #sales #sales_fl #guide .ul_right li strong {
+  color: red;
+}
+
+#main #sales #sales_fl #guide .ul_right li span {
+  margin: 0 10px;
+}
+
+#main #image {
+  width: 220px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+#main #image a {
+  margin-bottom: 26px;
+}
+
+#main #shop {
+  width: 960px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+#main #shop li {
+  display: inline-block;
+  float: left;
+  width: 220px;
+  height: 360px;
+  margin: 0 10px 50px;
+  cursor: pointer;
+}
+
+#main #shop li input {
+  width: 50px;
+  height: 38px;
+  border: 1px solid #ececec;
+  text-align: center;
+}
+
+#main #shop li p {
+  overflow: hidden;
+}
+
+#main #shop li p span {
+  color: #f00;
+  font-size: 18px;
+  width: 100%;
+  height: 24px;
+}
+
+#main #shop li p i {
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+  font-size: 14px;
+}
+
+#main #shop li p img {
+  display: inline-block;
+}
+
+#main #shop li p .btn_01 {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  left: -24px;
+  width: 30px;
+  height: 19px;
+  background: url(../../dist/img/goodslist-icon.png) no-repeat -127px -28px;
+}
+
+#main #shop li p .btn_02 {
+  display: inline-block;
+  width: 30px;
+  height: 19px;
+  position: relative;
+  top: 15px;
+  left: -54px;
+  background: url(../../dist/img/goodslist-icon.png) no-repeat -194px -27px;
+}
+
+#main #shop li p #shopp {
+  position: relative;
+  top: -58px;
+  left: 50px;
+  width: 145px;
+  height: 38px;
+  padding: 0 20px;
+  display: inline-block;
+  border: 1px solid #ececec;
+  margin-top: 20px;
+}
+
+#main #shop li p #shopp .vehicle {
+  display: inline-block;
+  width: 22px;
+  height: 18px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: url(../../dist/img/goodslist-icon.png) no-repeat -671px -28px;
+}
+
+#main #shop li:hover {
+  width: 220px;
+}
+
+#main #shop li:hover img {
+  width: 110%;
+}
+
+#main #shop li:hover p img {
+  width: 72px;
+}
+
+#main #shop li:hover i {
+  color: #e60012;
+}
+
+#main #shop li:hover #shopp {
+  color: #000;
+}
+
+#main #shop #blush:hover input {
+  border: 1px solid  red;
+}
+
+#main #shop #blush:hover #shopp {
+  border: 1px solid  red;
+  color: #e60012;
+}
+
+#main #shop #blush:hover #shopp .vehicle {
+  background: url(../../dist/img/goodslist-icon.png) no-repeat -603px -28px;
+}
+
+#main #tion {
+  width: 680px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+#main #tion span {
+  margin: 0 15px;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #dadada;
+}
+
+#main #tion li {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: 1px solid #dadada;
+  font-size: 14px;
+  color: #999999;
+  line-height: 40px;
+  text-align: center;
+}
+
+#main #tion i {
+  line-height: 40px;
+  margin-right: 7px;
+}
+
+#main #tion i input {
+  width: 40px;
+  height: 38px;
+  text-align: center;
+  line-height: 40px;
+}

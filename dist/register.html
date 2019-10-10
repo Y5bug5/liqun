@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/header2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/register.min.css">
+    <title>注册</title>
+</head>
+<body>
+    <div id="head"></div>
+    <div id="main">
+        <div id="message">
+            <li id="mess_first"><span id="back_first"></span>手机验证</li>
+            <li><span id="back_two"></span>填写账户信息</li>
+            <li><span id="back_three"></span>完成注册</li>
+        </div>
+        <div id="audit">
+            <div id="warning"> 
+                <i>目前仅支持具有合法营业执照的商家、企业、单位等的注册，个人注册将无法通过审核，给您带来不便，敬请谅解。</i>
+                <p>个人用户购物，为您推荐 <a href="javascript:;"> 利群网商&gt;</a>，方便、快捷，利群40余家门店共同为您服务。</p>
+                <p>手机号和密码，邮箱会判断，其他的有效果，不会添加到cookie</p>
+            </div>
+            <form action="post" id="form">
+                <ul class="fl" id="font">
+                    <li> <i>*</i><span>手机号：</span></li>
+                    <li> <i>*</i><span>图片验证：</span></li>
+                    <li> <i>*</i><span>短信验证：</span></li>
+                    <li> <span>邀请码：</span></li>
+                </ul>
+                <ul class="fr" id="input">
+                    <li><input type="text" class="txt"><em id="fault"></em></li>
+                    <li>
+                        <input type="text" id="img"><img  class="transparent" src="http://cg.liqunshop.com/Member/GetValidateCode?t=" alt="http://cg.liqunshop.com/Member/GetValidateCode?t="> <span>看不清？<a href="javascript:void(0)" οnclick="location.reload()" >手动刷新f5</a></span><em></em>
+                       
+                    </li>
+                    <li> <input type="text" id="cend"><input type="button" value="获取短信验证码" id="send"><em></em>
+                    </li>
+                    <li><input type="text"></li>
+                    <li><i></i>如果没有邀请码，请忽略，不影响注册</li>
+                    <li><a href="#mess"><input type="button" value="下一步" id="next"></a><span> 我已注册过，立即<a href="login.html"> 登录</a></span></li>
+                </ul>    
+            </form>
+        </div>
+        <div id="mess">
+            <ul class="fl" id="fonter">
+                <li><i>*</i><span>设置密码：</span></li>
+                <li><i>*</i><span>重复密码：</span></li>
+                <li><i>*</i><span>采购类型：</span></li>
+                <li><i>*</i><span>公司名称：</span></li>
+                <li id="very"><i>*</i><span>营业执照注册号：</span></li>
+                <li id="max"><i>*</i><span>收货地址：</span></li>
+                <li><i>*</i><span>联系人名字</span></li>
+                <li><span>联系人邮箱</span></li>
+            </ul>
+            <ul class="fl" id="inputer">
+                <li><input type="password" class="txt"><i id="fbult"></i></li>
+                <li><input type="password"><i></i></li>
+                <li><select name="shop" id="">
+                <option value="shupping">请选择</option>
+                <option value="shupping">请选择</option>
+                <option value="shupping">请选择</option>
+                <option value="shupping">请选择</option>
+                <option value="shupping">请选择</option>
+            </select><i></i></li>
+                <li><input type="text"></li>
+                <li ><input type="text"></li>
+                <div id="mon">
+                    <p>请正确填写店铺/公司/企事业单位所在地区及详细地址，下单时会使用该地址作为您的默认收货地址，平台暂不支持个人家庭地址的配送服务，敬请谅解。</p>
+                </div>
+                <li><select name="shop" id="province">
+                    <option value="shupping">省</option>
+                    <option value="shupping">山西省</option>
+                    <option value="shupping">山西省</option>
+                    <option value="shupping">山西省</option>
+                    <option value="shupping">山西省</option>
+                </select>
+                <select name="shop" id="town">
+                        <option value="shupping">市</option>
+                        <option value="shupping">长治市</option>
+                        <option value="shupping">长治市</option>
+                        <option value="shupping">长治市</option>
+                        <option value="shupping">长治市</option>
+                    </select>
+                    <select name="shop" id="district">
+                            <option value="shupping">区</option>
+                            <option value="shupping">小店区</option>
+                            <option value="shupping">小店区</option>
+                            <option value="shupping">小店区</option>
+                            <option value="shupping">小店区</option>
+                        </select>
+                <i></i></li>
+                <li><input type="text" placeholder="详细地址：（门牌号/楼层等）"></li>
+                <li><input type="text"></li>
+                <li><input type="email" class="txt"><i id="fcult"></i></li>
+                <li><input type="button" value="立即注册" id="only"> <span>我已注册过，立即<a href="login.html">登录</a></span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="over"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+        $('#head').load('head2_and_tail2.html #header');
+        $('#over').load('head2_and_tail2.html #foot');
+    </script>
+</body>
+</html>

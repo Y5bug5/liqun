@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.min.css">
+    <link rel="stylesheet" href="css/header2.min.css">
+    <link rel="stylesheet" href="">
+    <title>登录</title>
+</head>
+<body>
+       <div id="head">
+           
+       </div>
+    <div class="centre">
+        <form action="post" id="form" class="fr">
+            <div id="first">
+                <h3 id="enter" class="fl">欢迎登录</h3>
+                <span id="register" class="fr"><a href="register.html">快速注册&gt;</a></span>
+                <i id="fault"><span></span></i>
+            </div>
+            <p><input type="text" placeholder="用户名/手机号" id="uname"><span class="personage"></span></p>
+            <p><input type="password" placeholder="密码" id="uswd"><span class="cipher"></span></p>
+            <p><input type="button" value="登录" id="logging"></p>
+            <p><span id="Send" class="fr"><a href="javascript:;">忘记密码？</a></span></p>
+        </form>
+    </div>
+    <div id="over">
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        $('#head').load('head2_and_tail2.html #header');
+        $('#over').load('head2_and_tail2.html #foot');
+    </script>
+    
+</body>
+</html>
