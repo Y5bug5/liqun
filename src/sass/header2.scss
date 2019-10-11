@@ -1,0 +1,70 @@
+@import "_public";
+#header{
+    margin: auto;
+    padding: 24px 0px 0px;;
+    width: 1174px;
+    height:86px;;
+    .first{
+        width: 100%;
+        margin-left: 0px;
+    }
+    #center{
+        display:block;
+       div{
+            padding-right: 0px;
+            padding-left: 40px;
+            #quality{
+                width: 35px;
+                height: 35px;
+                position: relative;
+                top:17px;
+                left:0px;
+                background: url(../img/login-icon.jpg) -211px -45px no-repeat;
+                display: inline-block;
+            }
+            #integrity{
+                @extend #quality;
+                background: url(../img/login-icon.jpg) -115px -45px no-repeat;
+            }
+            #deal{
+                @extend #quality;
+                background: url(../img/login-icon.jpg) -160px -45px no-repeat;
+            }
+            #release{
+                @extend #quality;
+                background: url(../img/login-icon.jpg) -255px -45px no-repeat;
+            }
+            span{
+                font-size: 18px;
+                color: #666666;
+              }
+        }
+       
+    }
+}
+#foot{
+    margin:30px auto;
+    .row{
+        width: 100%;
+    }
+    .foot_first{
+        width: 610px;
+        margin:0 auto;
+    }
+    a{
+        padding:6px 12px;
+        color:rgb(153,153,153); 
+        font-size: 14px;
+        line-height: 14px;
+    }
+    div{
+        height: 25px;   
+       #footer{
+        font-size: 12px;
+        color:rgb(153,153,153);
+        text-align: center;
+        padding-top: 6px;
+     } 
+    }
+    
+}

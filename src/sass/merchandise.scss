@@ -1,0 +1,327 @@
+@import '_public';
+#main{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    #nav{
+        border-bottom: 2px solid #3466ad;
+        width: 100%;
+        height: 44px;
+        overflow: visible;
+        #nav_tion2{
+            width: 200px;
+            height: 44px;
+            margin-right: 10px;
+        }
+        span{
+            float: left;
+            padding-left: 30px;
+            margin-top: 12px;
+            font-size: 16px;
+            color: #666;
+            line-height: 30px;
+        }
+        #cvs{
+            margin-top: 12px;
+            width: 100px;
+            select{
+                border: 1px solid #ccc;
+                font-size: 16px; 
+                width:100%;
+                height: 30px;
+                text-align: center;
+                padding: 0 15px;
+                color: rgb(102, 102, 102);
+            }
+        }
+        #fresh{
+            @extend #cvs;
+            width: 90px;
+        }
+    }
+    #classify{
+        width: 100%;
+        height: 126px;
+        #point{
+            overflow: hidden;
+            span{
+                display: inline-block;
+                font-weight: 900;
+                width: 100px;
+                height: 42px;
+                font-size: 14px;
+                line-height: 42px;
+                color: #666;
+    
+            }
+            ul{
+                width: 800px;
+                li{
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #666;
+                    
+                    line-height: 42px;
+                    margin-right: 29px;
+                    overflow: hidden;
+                    
+                }
+            }
+            .hei{
+                height: 42px;
+            }
+            .very{
+                width: 55px;
+                color: #666;
+                line-height: 42px;
+                margin-right: 20px;
+                cursor: pointer;
+                i{
+                    display: inline-block;
+                    width: 16px;
+                    height: 8px;
+                    margin-left: 5px;
+                    margin-top: 18px;
+                    background: url(../../dist/img/goodslist-icon.png) no-repeat -203px -34px;
+                }
+            }
+            .very:active{
+                i{
+                    background: url(../../dist/img/goodslist-icon.png) no-repeat -136px -34px; 
+                }
+            }
+        }
+        #brand{
+            overflow: hidden;
+            @extend #point;
+        }
+        #seek{
+            overflow: hidden;
+            width: 100%;
+            height: 42px;
+           p{
+                margin-top: 5px;
+            input{
+                width: 235px;
+                height: 30px;
+                border: 1px solid #ccc;
+                padding: 0px 12px;
+            }
+            span{
+                float: right;
+                display: block;
+                width: 60px;
+                height: 30px;
+                background-color: #ccc;
+                i{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px 20px;
+                    background: url(../../dist/img/goodslist-icon.png) no-repeat -469px -27px;
+                    cursor: pointer;
+                }
+            }
+           }
+        }
+     }
+     #sales{
+         overflow: hidden;
+         #sales_fl{
+             width: 960px;
+             #guide{
+                 width: 100%;
+                 height:50px;
+                background-color: #ececec;
+                margin: 50px auto 20px;
+                display: block;
+                overflow: hidden;
+                ul{
+                    
+                    li{
+                        float: left;
+                        display: inline-block;
+                        width: 88px;
+                        height: 50px;
+                        text-align: center;
+                        line-height: 50px;
+                        font-size: 14px;
+                        color: #000;
+                        border-left: 1px solid #cccccc;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                    .gui_first{
+                        background-color: #f00;
+                       a{
+                           color: #fff; 
+                       }
+                    }
+                }
+                
+                .ul_right{
+                    width:240px;
+                    height: 48px;
+                    li{
+                        width:119px;
+                        border: none;
+                      i , strong{
+                            color: red;
+                        }
+                        span{
+                            margin: 0 10px;  
+                        }
+                    }
+                }
+             }
+         }
+     }
+   #image{
+    width: 220px;
+    margin-top: 50px;
+    overflow: hidden;
+    a{
+        margin-bottom: 26px;
+    }
+   }
+   #shop{
+       width: 960px;
+       margin-bottom: 60px;
+       overflow: hidden;
+       li{
+        display: inline-block;
+        float: left;
+        width: 220px;
+        height: 360px;
+        margin: 0 10px 50px;
+        cursor: pointer;
+        input{
+            width: 50px;
+            height: 38px;
+            border: 1px solid #ececec;
+            text-align: center;
+            }
+        p{
+            overflow: hidden;
+            span{
+                color: #f00;
+                font-size: 18px;
+                width: 100%;
+                height: 24px;
+            }
+            i{
+                display: inline-block;
+                width: 100%;
+                height:  38px;
+                font-size: 14px;
+            }
+            img{
+                display: inline-block;
+            }
+            .btn_01{
+                display: inline-block;
+                position: relative;
+                top: -5px;
+                left: -24px;
+                width: 30px;
+                height: 19px;
+                background: url(../../dist/img/goodslist-icon.png) no-repeat -127px -28px;
+            }
+            .btn_02{
+                display: inline-block;
+                width: 30px;
+                height: 19px;
+                position: relative;
+                top: 15px;
+                left: -54px;
+                background: url(../../dist/img/goodslist-icon.png) no-repeat -194px -27px;
+            }
+            #shopp{
+                position: relative;
+                top: -58px;
+                left: 50px;
+                width: 145px;
+                height: 38px;
+                padding:0 20px; 
+                display: inline-block;
+                border: 1px solid #ececec;
+                margin-top: 20px;
+                .vehicle{
+                    display: inline-block;
+                    width: 22px;
+                    height: 18px;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    background: url(../../dist/img/goodslist-icon.png) no-repeat -671px -28px;
+                }
+            } 
+         }    
+       }
+       li:hover{
+           width: 220px;
+           img{
+               width: 110%;
+           }
+           p{
+               img{
+                   width: 72px;
+               }
+           }
+           i{
+               color: #e60012;
+           }
+          #shopp{
+              color: #000;
+          }
+       }
+       #blush:hover{
+           input{
+            border: 1px solid  red;
+           }
+           #shopp{
+            border: 1px solid  red;
+            color: #e60012;
+            .vehicle{
+                background: url(../../dist/img/goodslist-icon.png) no-repeat -603px -28px;
+            }
+           }
+       }
+    }
+    #tion{
+        width: 680px;
+        height: 40px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        span{
+            margin: 0 15px;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #dadada;
+        }
+        li{
+            display: inline-block;
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            border: 1px solid #dadada;
+            font-size: 14px;
+            color: #999999;
+            line-height: 40px;
+            text-align: center;
+        }
+        i{
+            line-height: 40px;
+            margin-right: 7px;
+            input{
+                width: 40px;
+                height: 38px;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+    }
+ }

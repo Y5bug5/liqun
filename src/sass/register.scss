@@ -1,0 +1,201 @@
+@import '_public';
+#main{
+    width: 100%;
+    margin-top: 80px;
+    border-top:1px solid #999;
+    #message{
+        width: 850px;
+        margin: auto;
+        position: relative;
+        top: -51px;
+        left: 0px;
+        li{
+            float: left;
+            font-size: 20px;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            display: inline-block;
+            #back_first{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+            background: url(../../dist/img/findPW-icon.png) no-repeat -52px -34px;
+            }
+            #back_two{
+                @extend #back_first;
+                background: url(../../dist/img/findPW-icon.png) no-repeat -172px -32px;
+            }
+            #back_three{
+                @extend #back_first;
+                background: url(../../dist/img/findPW-icon.png) no-repeat -320px -32px;
+            }
+        }
+        #mess_first{
+            border-bottom: 1px solid red; 
+        }
+    }
+    #audit{
+        width: 850px;
+        margin: auto;
+        #warning{
+            width: 405px;
+            margin: 50px auto 25px;
+            background: #ffface;
+            border: 1px solid #f60;
+            padding: 0 10px 5px 10px;
+        }
+        #form{
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+           #font{
+               width: 220px;
+               li{
+                   width: 100%;
+                   height: 40px;
+                   margin-bottom: 35px;
+                   text-align: right;
+                   line-height: 40px;
+                   i{
+                       color: #e60012;
+                       display: inline-block;
+                       margin-right: 10px;
+                   }
+               }
+           } 
+           #input{
+               width: 610px;
+               li{
+                   width: 100%;
+                   height: 40px;
+                   margin-bottom: 35px;
+                   #fault{
+                       float: right;
+                       display: inline-block;
+                       width:200px;
+                       height: 40px;
+                       line-height: 40px;
+                       color: #e60012; 
+                   }
+                   input{
+                        width: 405px;
+                        height: 40px;
+                        border: 1px solid #cccccc;
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding: 10px;
+                   }
+                   #img{
+                       width: 160px;
+                       float: left;
+                        margin-right: 20px; 
+                   }
+                   img{
+                       display: inline-block;
+                       margin-right: 20px; 
+                   }
+                   span{
+                       display: inline-block;
+                   }
+                   #cend{
+                       width: 245px;
+                       margin-right: 20px;
+                   }
+                   #send{
+                    width: 140px;
+                   }
+                   #next{
+                    width: 200px;
+                    height: 50px;
+                    font-size: 18px;
+                    color: #ffffff;
+                    text-align: center;
+                    background-color: #e60012;
+                    border:#e60012;
+                    margin-right: 55px;
+                   }
+               }
+           }
+        }
+    }
+    #mess{
+        width: 850px;
+        margin: 75px auto 0px;
+        #fonter{
+            width: 220px;
+            text-align: right;
+            li{
+                width: 200px;
+                height: 40px;
+                margin-bottom: 35px;
+                line-height: 40px;
+                i{
+                    color: #e60012;
+                }
+            }
+            #very{
+                margin-bottom: 112px;
+            }
+            #max{
+                margin-bottom: 110px;
+            }
+        }
+        #inputer{
+            width:610px;
+            li{
+                margin-bottom: 35px;
+                #fbult{
+                    float: right;
+                    display: inline-block;
+                    width:200px;
+                    height: 40px;
+                    line-height: 40px;
+                    color: #e60012; 
+                }
+                #fcult{
+                    @extend #fbult;
+                }
+                select{
+                    width: 405px;
+                     height: 40px;
+                }
+                input{
+                width: 405px;
+                height: 40px;
+                 }
+                 #province{
+                    width: 100px;
+                    height: 40px;
+                    border: 1px solid #cccccc;
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 10px;
+                    margin-right: 55px;
+                 }
+                 #town{
+                     @extend #province;
+                 }
+                 #district{
+                    @extend #province;
+                 }
+                 #only{
+                    width: 200px;
+                    height: 50px;
+                    font-size: 18px;
+                    color: #ffffff;
+                    text-align: center;
+                    background-color: #e60012;
+                    border:#e60012;
+                    margin-right: 55px;
+                 }  
+            }
+           #mon{
+                width: 405px;
+                height: 76px;
+                padding: 10px;
+               background: url(../../dist/img/reg-account-cue.jpg)
+           } 
+        }
+    }
+}

@@ -1,0 +1,41 @@
+
+/*公共样式*/
+*{
+    margin:0;
+    padding:0;
+    }
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration:none;
+}
+b,strong,h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+ul,ol,li{
+    list-style: none;
+}
+i,em{
+    font-style:normal;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clear::after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+img{
+    display:block;
+    border: 0;
+}
