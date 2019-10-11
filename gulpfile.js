@@ -9,7 +9,7 @@ const concat = require('gulp-imagemin');
 
 gulp.task('sass', () => {
     gulp.src('./src/sass/*.scss')
-        .pipe(sass({outputStyle:'expanded'}))
+        .pipe(sass({outputStyle:'compressed'}))
         //.pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./dist/css'));
